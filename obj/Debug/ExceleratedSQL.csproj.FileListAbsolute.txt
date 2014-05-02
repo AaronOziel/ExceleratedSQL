@@ -1,2 +1,0 @@
-C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\bin\Debug\ExceleratedSQL.exe.config
-C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\obj\Debug\ExceleratedSQL.csproj.ResolveComReference.cache
