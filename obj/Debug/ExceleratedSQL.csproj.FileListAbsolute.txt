@@ -1,0 +1,10 @@
+C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\bin\Debug\MTGDeck.mdf
+C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\bin\Debug\MTGDeck_log.ldf
+C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\bin\Debug\ExceleratedSQL.exe.config
+C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\bin\Debug\ExceleratedSQL.exe
+C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\bin\Debug\ExceleratedSQL.pdb
+C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\obj\Debug\ExceleratedSQL.csproj.ResolveComReference.cache
+C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\obj\Debug\ExceleratedSQL.Properties.Resources.resources
+C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\obj\Debug\ExceleratedSQL.csproj.GenerateResource.Cache
+C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\obj\Debug\ExceleratedSQL.exe
+C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\obj\Debug\ExceleratedSQL.pdb
