@@ -9,10 +9,10 @@ This is a program that will move Excel data into a SQL Database.
 ##Features:
 - No SQL Injection! Sanitized inputs! (I think...)
 - Easy to run, flawless execution.
+- Lots of error checking. Some of the errors are kind of vague though. 
+- Can account for blank rows or not enough/too many columns!
 
 ##In Devlopment:
-- More error checking
-- Lots of testing
 - Better error reporting
 - More useful comments!
 - A GUI?!
