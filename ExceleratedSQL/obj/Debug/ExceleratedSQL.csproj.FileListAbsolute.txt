@@ -8,3 +8,4 @@ C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedS
 C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\obj\Debug\ExceleratedSQL.csproj.GenerateResource.Cache
 C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\obj\Debug\ExceleratedSQL.exe
 C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\obj\Debug\ExceleratedSQL.pdb
+C:\Users\Aaron\Documents\Visual Studio 2013\Projects\ExceleratedSQL\ExceleratedSQL\obj\Debug\ExceleratedSQL.csprojResolveAssemblyReference.cache

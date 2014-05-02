@@ -24,8 +24,7 @@
 |*      - The excel file will be exactly 6 columns in width
 |*      - Each cell will have appropriate data in it (ie: no strings in number cells)
 |*      - ID column must be unique (it is the PK for the table)
-|*      - Only the [Date Created] and [Rank] columns can be null
-|*      - Empty rows will cause errors. Never enter data in a cell you don't intend to use. 
+|*      - Empty rows will be caught and handled. Try to avoid them though. 
 |*
 \* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -81,7 +80,7 @@ namespace ExceleratedSQL
                 }
                 else if (lastcol > MAX_COL)
                 {   // Too many? Show a warning.
-                    Console.WriteLine("[Warning#100] Excel document had more columns than necessary, columns" + MAX_COL + 1 + "+ will be ignored.");
+                    Console.WriteLine("[Warning#100] Excel document had more columns than necessary, columns " + (MAX_COL + 1) + "+ will be ignored.");
                 }
 
                 Console.WriteLine("Opened Excel File Successfully");
@@ -130,7 +129,7 @@ namespace ExceleratedSQL
                 int inserts = 0;
                 for (int i = 1; i <= lastrow; i++)
                 {
-                    if (Excel.Range.Equals(excel.get_Range("A" + i, Type.Missing), "")) // TODO: Is a blank cell "" or null?
+                    if (excel.get_Range("A" + i, Type.Missing).Text == "") // Weed out blank rows
                     {
                         Console.WriteLine("[Warning#201] Row " + i + " seems to be blank. It was skipped.");
                     }
@@ -148,13 +147,18 @@ namespace ExceleratedSQL
                 }
                 Console.WriteLine("Inserted [" + inserts + "] entries into the database");
             }
+            catch (System.FormatException format)
+            {
+                Console.WriteLine("[Error  #201] A cell was improperly formatted. "
+                + "Please check all cells to ensure no incorrect data exists.");
+            }
             catch (System.Data.SqlClient.SqlException sql)
             {
-                Console.WriteLine("[Error  #201] " + sql.ToString());
+                Console.WriteLine("[Error  #202] " + sql.ToString());
             }
             catch (Exception e)
             {
-                Console.WriteLine("[Error  #202] " + e.ToString());
+                Console.WriteLine("[Error  #203] " + e.ToString());
             }
 
             try // Close everything, if this fails a lot of rogue processes will be running. 
