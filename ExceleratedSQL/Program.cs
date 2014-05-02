@@ -13,7 +13,7 @@
 |*  Tools:
 |*  [C#]: Considering this project is dealing with two different Microsoft
 |*  products (Excel and SQL Server) I thought it best to use Microsoft's 
-|*  favorite langauge. Other than that I used the obvious SQL and Excel
+|*  favorite language. Other than that I used the obvious SQL and Excel
 |*  libraries (System.Data.SqlClient & Microsoft.Office.Interop.Excel).
 |* 
 |*  [Links]:
@@ -22,7 +22,7 @@
 |*  
 |*  Assumptions & Conditions: 
 |*      - The excel file will be exactly 6 columns in width
-|*      - Each cell will have approptiate data in it (ie: no strings in number cells)
+|*      - Each cell will have appropriate data in it (ie: no strings in number cells)
 |*      - ID column must be unique (it is the PK for the table)
 |*      - Only the [Date Created] and [Rank] columns can be null
 |*      - Empty rows will cause errors. Never enter data in a cell you don't intend to use. 
@@ -135,7 +135,7 @@ namespace ExceleratedSQL
                         Console.WriteLine("[Warning#201] Row " + i + " seems to be blank. It was skipped.");
                     }
                     else
-                    {
+					{
                         cmd.Parameters["@Deck"].Value = excel.get_Range("A" + i, Type.Missing).Text;
                         cmd.Parameters["@Date"].Value = Convert.ToDateTime(excel.get_Range("B" + i, Type.Missing).Text);
                         cmd.Parameters["@Rank"].Value = excel.get_Range("C" + i, Type.Missing).Text;
