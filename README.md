@@ -18,6 +18,6 @@ This is a program that will move Excel data into a SQL Database.
 - A GUI?!
 
 ##Bugs
-If you have a formatting error (garbage data or blank cell) the entire program will stop. It currently cannot move on and attempt more inserts after an error.
+- If you have a formatting error (garbage data or blank cell) the entire program will stop. It currently cannot move on and attempt more inserts after an error.
 
-Sometimes extra Excel processes are left running after the programs completion. This is likely caused by errors that exit the program without properly closing connections and quitting Excel. Needs investigation. 
+- Sometimes extra Excel processes are left running after the programs completion. This is likely caused by errors that exit the program without properly closing connections and quitting Excel. Needs investigation. 
